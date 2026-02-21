@@ -1,0 +1,175 @@
+/**font link poopie type font*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Spice&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+    
+}
+/**root is variable using this color we can apply on content*/
+:root{
+   --orange-clr:#E96C28;
+   --white-clr:#FFF;
+   --black-clr:#000;
+   --gray-clr:#636363;
+   --light-gray:#C4C4C4;
+   
+}
+/**cakery logo*/
+.logo-txt{
+    font-size:1.5rem ;
+    color:var(--orange-clr);
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;/**underline remove*/
+}
+span{
+    color: var(--black-clr);
+}
+.navlist{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+}
+li{
+    list-style: none;
+}
+.navlinks{
+    color: var(--black-clr);
+    font-weight: 500;/**bold mai atta hai test*/
+}
+.active,.navlinks:hover{
+    color:var(--orange-clr);/**hover hone pe orenge color atta hai*/
+}
+.icon-link{
+    background:var(--orange-clr);
+    width: 2.3rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    margin-right: .5rem;
+    display: inline-block;
+    text-align: center;
+    line-height: 2.3rem;
+    transition: .3s ease-in-out;
+} 
+.icon-link:hover{
+    transform: translateY(-10%);
+}
+.fa-solid{
+    font-size: 1.1rem;
+    color: var(--white-clr);
+    
+} 
+head{
+    height: 13vh;
+}
+.navbar{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 100%;
+    padding-inline:5rem ;
+    
+    
+}
+.container{
+    width: 80%;
+    margin: auto;   
+}
+.humburger{
+    cursor: pointer;
+    display: none;
+}
+.burger{
+    background: var(--black-clr);
+    width: 2.3rem;
+    height: .25rem;
+    margin: .3rem;
+    border-radius: 2rem;
+}
+
+/**section part*/
+.hero-section{
+    height: calc(100vh - 13vh);
+   
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+}
+.content{
+   
+    flex: 1;
+}
+.image-container{
+    position: relative;
+    flex: 1;
+}
+.image-container::before{
+    content: '';
+    position: absolute;
+    top:50%;
+    right: 0;
+    background: var(--dawn-pink);
+    width: 35rem;
+    height: 30vh;
+    border-radius: 50%;
+}
+img{
+    max-width: 100%;
+    height: auto;
+
+}
+h1{
+    font-size: 3.5rem;
+    line-height: 4rem;
+    margin-top: 1rem;
+}
+.watch{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+p{
+    color: var(--gray-clr);
+    margin-block: 1.5rem;
+    max-width: 500px;
+}
+.btn-con{
+display: flex;
+gap: 1.5rem;
+
+}
+button{
+    background-color: var(--orange-clr);
+    color: var(--white-clr);
+    border: .1rem solid var(--orange-clr);
+    padding: .55rem 1.5rem;
+    border-radius: 5rem;
+    font-size: 1rem;
+}
+[data-type='bordered-btn']{
+    background: transparent;
+    color: var(--orange-clr);
+    height: fit-content;
+
+}
+/*Stored section*/
+.other-sec{
+    padding-block: 5rem;/*top and bottem sathi block*/
+}
+.row-cont{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.column-cont{
+     display: flex;
+     flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
